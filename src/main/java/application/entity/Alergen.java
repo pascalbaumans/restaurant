@@ -1,4 +1,4 @@
-package entity;
+package application.entity;
 
 public enum Alergen {
 
