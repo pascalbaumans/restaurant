@@ -1,0 +1,6 @@
+https://www.geeksforgeeks.org/postgresql-psql-commands/
+
+psql -d restaurant -U pascal
+
+
+pgadmin

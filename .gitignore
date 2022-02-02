@@ -188,3 +188,4 @@ fabric.properties
 /.mvn/wrapper/maven-wrapper.properties
 /.idea/misc.xml
 /.idea/vcs.xml
+/restaurant.iml
