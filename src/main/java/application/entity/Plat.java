@@ -1,4 +1,4 @@
-package entity;
+package application.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,8 +13,10 @@ import java.math.BigDecimal;
 @Entity
 @Table
 public class Plat {
+
+
     @Id
-    @SequenceGenerator(name = "plat_sequence",sequenceName = "plat_sequence",allocationSize = 1)
+    @SequenceGenerator(name = "plat_sequence", sequenceName = "plat_sequence", allocationSize = 1)
     @GeneratedValue(generator = "plat_sequence", strategy = GenerationType.SEQUENCE)
     private Long id;
     private BigDecimal price;

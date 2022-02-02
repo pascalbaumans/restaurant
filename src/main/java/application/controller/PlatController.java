@@ -1,6 +1,6 @@
-package application;
+package application.controller;
 
-import entity.Plat;
+import application.entity.Plat;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
