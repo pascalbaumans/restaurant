@@ -1,0 +1,1 @@
+insert into plat (PRICE,NAME) VALUES (20,'testdata.sql');

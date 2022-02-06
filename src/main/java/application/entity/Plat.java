@@ -23,7 +23,7 @@ public class Plat {
     private String name;
     //private List<Alergen> alergenList;
 
-    public Plat(String name, BigDecimal price) {
+    public  Plat( BigDecimal price, String name) {
         this.name = name;
         this.price = price;
     }
