@@ -189,3 +189,5 @@ fabric.properties
 /.idea/misc.xml
 /.idea/vcs.xml
 /restaurant.iml
+/.idea/jpa-buddy.xml
+/.idea/jpa-buddy-datasource.xml
