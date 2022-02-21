@@ -1,0 +1,24 @@
+oracle : support JDBC - oui, une connexion jdbc
+
+1. log cloud : chaque instance doit avoir le même tm unique name pas de mélange ( transac ID )
+   1 instance master qui va gérer ce qui traines dans les transacs pour les autres
+
+2. TM unique name  +  max timeout ( transaction abandonnée avant le rollback )
+
+3. ressource tierces non xa --> ok 
+
+ all ms dans la même db ? tout dans la même DB plus simple si haute dispo
+ db separées : possible aussi , depends de l'archi ...
+
+ c etait plus une question de Dépendances DB -> bil prefere une db du ms concerné mais dans un schéma à part
+ pas de db dédiée à la BIL.  -  mais attention au backup.
+
+
+4. tx distribuée entre plusieurs ms : log cloud fonctionne aussi mais via http - si tout est dans la meme 
+db : on peut eviter le http pour le recovery ( une meme instance logcloud partagée entre tous les ms. 
+avec un différent tm unique name dans ce cas.)
+
+
+5. log : doit etre enregistré 
+   -> envoyer message enregistrement de log cloud niveau log à M Pardon.
+
